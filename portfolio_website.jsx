@@ -30,6 +30,8 @@ export default function Portfolio() {
       {/* Hero Section */}
       <section className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
         {/* Profile Photo */}
+        <img src="C:\Users\LENOVO\Downloads\create a group photo.png" alt="Profile" className="..." />
+
         <motion.div 
           initial={{ opacity: 0, x: -50 }} 
           animate={{ opacity: 1, x: 0 }}
@@ -53,10 +55,10 @@ export default function Portfolio() {
           <h2 
             className="text-4xl font-extrabold text-gray-800"
           >
-            Hi, I’m <span className="text-green-700">[Your Name]</span>
+            Hi, I’m <span className="text-green-700">Praful Bhanarkar</span>
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Salesforce Enthusiast | QA Specialist | Trailhead Achiever
+            Salesforce QA | Trailhead Three Star Achiever
           </p>
         </motion.div>
       </section>
