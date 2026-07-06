@@ -1,0 +1,316 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ================= HEADER ================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 60px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+nav a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.5);
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* ================= SECTION HEADING ================= */
+.section-heading {
+  background: #000;
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 40px auto 30px;
+  text-align: center;
+  width: fit-content;
+  transition: 0.3s ease;
+}
+
+.section-heading:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+/* ================= EXPERIENCE CARDS ================= */
+.experience-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience-row.left {
+  justify-content: flex-start;
+}
+
+.experience-row.right {
+  justify-content: flex-end;
+}
+
+.experience-card {
+  width: 45%;
+  background: #eaf6ff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  border: 0.5px solid black;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.experience-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.experience-company {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.experience-desc {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+/* ================= DOTTED LINE ================= */
+.dotted-line {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 596px;
+  background-image: repeating-linear-gradient(to bottom,
+      #000 0px,
+      #000 4px,
+      transparent 4px,
+      transparent 8px);
+  animation: move-dots 1s linear infinite;
+}
+
+@keyframes move-dots {
+  from {
+    background-position-y: 0;
+  }
+
+  to {
+    background-position-y: 20px;
+  }
+}
+
+/* ================= ARROW ================= */
+.arrow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  color: #000;
+  animation: move-arrow 7s linear infinite;
+}
+
+@keyframes move-arrow {
+  0% {
+    top: 800px;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 1px;
+    opacity: 0;
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .experience-row {
+    justify-content: center !important;
+  }
+
+  .experience-card {
+    width: 100%;
+  }
+
+  .dotted-line,
+  .arrow {
+    display: none;
+  }
+}
+
+
+/* ================= Header Footer ================= */
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FULL HEIGHT LAYOUT */
+html,
+body {
+  height: 100%;
+}
+
+/* BODY LAYOUT */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f8fc;
+  color: #333;
+}
+
+/* ================= HEADER ================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 65px;
+  max-width: 80px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+nav a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 1px 2px rgba(0, 255, 255, 0.5),
+    0px 2px 4px rgba(0, 255, 255, 0.5),
+    0px 4px 8px rgba(0, 255, 255, 0.5);
+}
+
+/* ================= MAIN (GAP AREA) ================= */
+main {
+  flex: 1;
+  /* THIS CREATES SPACE BETWEEN HEADER & FOOTER */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #fff;
+  font-size: 1.4rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #1d8fe1;
+}
+
+.footer-copy {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* ===== TOGGLE ANIMATION ===== */
+/* Move dotted line and arrow relative to section content */
+.section-content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  position: relative;
+  /* Make child elements position relative */
+}

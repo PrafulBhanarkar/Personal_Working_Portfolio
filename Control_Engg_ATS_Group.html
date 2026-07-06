@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Engineer Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            position: relative; /* Needed for ::before positioning */
+            overflow-x: hidden; /* Prevent horizontal scroll if image is large */
+        }
+
+        /* Background image */
+        body::before {
+            content: "";
+            position: fixed; /* Fixed so it stays while scrolling */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background: url('https://www.ats-group.com/assets/images/facebook-share.png') no-repeat center center;
+            background-size: contain; /* Adjust size to fit nicely */
+            opacity: 0.1; /* 30% visibility */
+            z-index: -1; /* Behind content */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+       
+            padding: 40px;
+           
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        h1,h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .company {
+            font-weight: bold;
+            color: #2980b9;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .project {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 5px 5px 0 0;
+            font-size: 14px;
+        }
+
+        /* Accordion style for responsibilities/projects */
+        .accordion {
+            cursor: pointer;
+            padding: 12px 15px;
+            margin: 5px 0;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .accordion:hover {
+            background-color: #3498db;
+        }
+
+        .panel {
+            padding: 0 15px;
+            display: none;
+            overflow: hidden;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        
+    /* ================= HEADER ================= */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #333;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 5px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    nav a:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0, 255, 255, 0.5);
+    }
+    </style>
+</head>
+<body>
+
+      <!-- Header -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="https://svtechsoft.com/wp-content/uploads/2024/03/Salesforce-Testing-RB.png" alt="Quality Assurance">
+      </a>
+    </div>
+    <nav>
+      <a href="About.html">About</a>
+      <a href="WorkExperience.html">Work Experience</a>
+      <a href="Skills.html">Skills</a>
+    </nav>
+  </header>
+
+    <div class="container">
+        <h1>ATS Group: Control Engineer</h1>
+        <h3>Pune, MH, IN | 2020–2021</h3>
+
+        <div class="section">
+            <p>Global industrial automation company specializing in conveyor systems, industrial automation, and turnkey solutions for automotive paint shops and other industries.</p>
+        </div>
+
+        <div class="section">
+            <h2>Professional Summary</h2>
+            <p>Control Engineer with 1 year of experience in automation and control systems, successfully executing projects at <strong>Asian Paints Vizag</strong> and <strong>FIAT</strong> facilities, handling commissioning, testing, and system optimization for industrial automation.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Responsibilities</h2>
+            <button class="accordion">System Design & Engineering</button>
+            <div class="panel">
+                <ul>
+                    <li>Developed PLC/HMI logic and control schematics for automated conveyors and paint shop processes.</li>
+                    <li>Prepared functional specifications and wiring diagrams for automation panels.</li>
+                </ul>
+            </div>
+
+            <button class="accordion">Commissioning & Startup</button>
+            <div class="panel">
+                <ul>
+                    <li>Led commissioning at Asian Paints Vizag and FIAT facilities.</li>
+                    <li>Performed loop checking, hardware verification, and software validation.</li>
+                    <li>Collaborated with mechanical and electrical teams to ensure seamless integration.</li>
+                </ul>
+            </div>
+
+            <button class="accordion">Testing & Validation</button>
+            <div class="panel">
+                <ul>
+                    <li>Conducted Factory Acceptance Tests (FAT) and Site Acceptance Tests (SAT).</li>
+                    <li>Troubleshot control systems to optimize performance and reduce downtime.</li>
+                </ul>
+            </div>
+
+            <button class="accordion">Documentation & Reporting</button>
+            <div class="panel">
+                <ul>
+                    <li>Created detailed technical documentation including test reports and control narratives.</li>
+                    <li>Maintained accurate records of PLC code versions and system configurations.</li>
+                </ul>
+            </div>
+
+            <button class="accordion">Customer & Site Coordination</button>
+            <div class="panel">
+                <ul>
+                    <li>Coordinated with client engineers to address system concerns and implement modifications.</li>
+                    <li>Provided on-site training to operators and maintenance staff.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span>PLC Programming</span>
+                <span>HMI/SCADA</span>
+                <span>Control Panel Wiring</span>
+                <span>Ladder Logic</span>
+                <span>Sequential Function Charts</span>
+                <span>Profibus / Profinet / Ethernet/IP</span>
+                <span>Safety Interlocks</span>
+                <span>System Troubleshooting</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Project Highlights</h2>
+            <div class="project">
+                <h3>Asian Paints Vizag – Paint Shop Automation</h3>
+                <ul>
+                    <li>Engineered PLC solutions for conveyor and painting lines.</li>
+                    <li>Optimized synchronization between mechanical conveyors, paint guns, and curing processes.</li>
+                    <li>Enhanced system reliability and minimized downtime.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>FIAT Automotive – Production Line Controls</h3>
+                <ul>
+                    <li>Commissioned automated conveyor sections for assembly and paint shop.</li>
+                    <li>Collaborated with international teams to ensure quality compliance.</li>
+                    <li>Performed FAT & SAT to validate safety and operational readiness.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const accordions = document.querySelectorAll('.accordion');
+
+        accordions.forEach(acc => {
+            acc.addEventListener('click', () => {
+                acc.classList.toggle('active');
+                const panel = acc.nextElementSibling;
+                if (panel.style.display === 'block') {
+                    panel.style.display = 'none';
+                } else {
+                    panel.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

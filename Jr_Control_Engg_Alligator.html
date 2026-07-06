@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jr Control Engineer</title>
+  <style>
+    body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            position: relative; /* Needed for ::before positioning */
+            overflow-x: hidden; /* Prevent horizontal scroll if image is large */
+        }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .timeline-item:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .timeline-text {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 400px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline-text h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .timeline-text p {
+      margin: 5px 0;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .timeline-image {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .timeline-image img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .timeline-item {
+        flex-direction: column;
+      }
+
+      .timeline-item:nth-child(even) {
+        flex-direction: column;
+      }
+    }
+
+ h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        h1,h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+
+        /* Background image */
+        body::before {
+            content: "";
+            position: fixed; /* Fixed so it stays while scrolling */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background: url('https://alligators.us/wp-content/uploads/2025/08/Alligator-logo-PNG-BG-Remove-1-scaled.png') no-repeat center center;
+            background-size: contain; /* Adjust size to fit nicely */
+            opacity: 0.1; /* 30% visibility */
+            z-index: -1; /* Behind content */
+            
+        }
+    /* ================= HEADER ================= */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #333;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 5px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    nav a:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0, 255, 255, 0.5);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="https://svtechsoft.com/wp-content/uploads/2024/03/Salesforce-Testing-RB.png" alt="Quality Assurance">
+      </a>
+    </div>
+    <nav>
+      <a href="About.html">About</a>
+      <a href="WorkExperience.html">Work Experience</a>
+      <a href="Skills.html">Skills</a>
+    </nav>
+  </header>
+<div>
+  <h1>Alligator Automations: Jr. Control Engineer</h1>
+  <h3>Pune, MH, IN | 2018–2020</h3>
+
+  <div class="timeline">
+    <!-- Block 1 -->
+    <div>
+      <div>
+        <p>Designed, configured, and optimized PLC & HMI/SCADA control logic for custom packaging and material‑handling
+          systems.</p>
+        <p>Developed and tuned PLC programs (ladder logic / function blocks / structured text) for discrete and sequence
+          control in bagging, palletizing, and conveyor systems.</p>
+        <p>Integrated control systems with HMI screens for operator control, real‑time status display, and alarm/event
+          logging for plant machines.</p>
+      </div>
+
+    </div>
+
+    <!-- Block 2 -->
+    <div class="timeline-item">
+      <div class="timeline-text">
+        <p>Implemented communication protocols (e.g., Ethernet/IP, Modbus TCP/IP) between PLCs, servo drives, and
+          supervisory interfaces to improve reliability and system visibility.</p>
+        <p>Programmed and calibrated servo-based motion control for packaging lines and robotic modules.</p>
+        <p>Configured motion profiles and PID tuning on servo drives to achieve precise indexing and synchronized motion
+          across multi-axis conveyors and bagging equipment.</p>
+      </div>
+      <div class="timeline-image">
+        <img src="https://instrumentationblog.com/wp-content/uploads/2020/08/Communication-Protocols.jpg"
+          alt="Communication Protocol">
+      </div>
+    </div>
+
+    <!-- Block 3 -->
+    <div class="timeline-item">
+      <div class="timeline-text">
+        <p>Installed and commissioned feedback devices (encoders/photocells) to ensure positional repeatability and
+          correct phase transitions, reducing product defects and mechanical wear.</p>
+        <p>Automated primary and secondary packaging, palletizing, and conveyor systems.</p>
+        <p>Implemented control sequences for a range of automated solutions (bag placement, case packing, hybrid
+          palletizing, conveyor transfer logic).</p>
+      </div>
+      <div class="timeline-image">
+        <img
+          src="https://mecaluxcom.cdnwm.com/img/box-carton-conveyor/box-carton-conveyor.1.13.jpg?imwidth=640&imdensity=1"
+          alt="Automation">
+      </div>
+    </div>
+
+    <!-- Block 4 -->
+    <div class="timeline-item">
+      <div class="timeline-text">
+        <p>Programmed logic to manage interlocking safety circuits, photoeyes, scanners, and push-button operator panels
+          to ensure smooth and safe machine operation.</p>
+        <p>Led commissioning, FAT/SAT testing, and on-site troubleshooting for turnkey automation installations.</p>
+        <p>Performed machine commissioning and Factory/Site Acceptance Tests with mechanical and electrical teams to
+          validate system functionality against design specifications.</p>
+      </div>
+      <div class="timeline-image">
+        <img src="https://blogs.aashgates.com/public/.ChatGPT_Image_Jul_1__2025__11_47_27_PM_m.png" alt="Commissioning">
+      </div>
+    </div>
+
+    <!-- Block 5 -->
+    <div class="timeline-item">
+      <div class="timeline-text">
+        <p>Diagnosed PLC logic faults, field I/O issues, and communication errors under live conditions; applied
+          systematic debugging practices to reduce commissioning delays.</p>
+        <p>Collaborated with multidisciplinary engineering teams on complex automation builds.</p>
+        <p>Contributed to continuous improvement initiatives, standardizing control modules and HMI elements to improve
+          maintainability and operator usability across multiple deployment platforms.</p>
+      </div>
+      <div class="timeline-image">
+        <img
+          src="https://cdn.automationforum.co/uploads/2026/01/PLC-Permissive-Logic-Troubleshooting-Procedure-for-Instrumentation-Engineers-1-scaled.jpg"
+          alt="Teamwork">
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

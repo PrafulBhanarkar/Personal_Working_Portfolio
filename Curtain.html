@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praful Bhanarkar | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="Curtain.css" />
+</head>
+
+<body>
+
+  <!-- Curtain Section -->
+  <div class="curtain-wrap" id="curtainWrap">
+    <h1 class="curtain-text" id="welcomeText">Welcome to My Portfolio</h1>
+    <div class="instruction-text" id="instructionText">
+      Please click anywhere on the page to continue
+    </div>
+  </div>
+
+  <script>
+    const curtainWrap = document.getElementById("curtainWrap");
+const welcomeText = document.getElementById("welcomeText");
+const instructionText = document.getElementById("instructionText");
+
+document.addEventListener("click", () => {
+  // Animate text
+  welcomeText.classList.add("zoom-out");
+
+  // Hide instruction text
+  instructionText.style.display = "none";
+
+  // Remove curtain after animation
+  setTimeout(() => {
+    curtainWrap.style.display = "none";
+    document.body.style.overflow = "auto";
+     window.location.href = "about.html";
+  }, 1000);
+});
+  </script>
+</body>
+
+</html>
